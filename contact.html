@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GentlePaws Pet Care Services</title>
+    <meta name="description" content="Get in touch with GentlePaws for professional pet care services in New York. Book a free consultation today!">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 bg-gradient-to-br from-orange-400 to-pink-500 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <i data-lucide="heart" class="w-5 h-5 text-white fill-white"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-gray-900">GentlePaws</span>
+                </a>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="text-gray-700 hover:text-orange-500 transition-colors">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-orange-500 transition-colors">About Us</a>
+                    <a href="services.html" class="text-gray-700 hover:text-orange-500 transition-colors">Services</a>
+                    <a href="contact.html" class="text-orange-500 font-semibold transition-colors">Contact</a>
+                    <a href="contact.html" class="bg-orange-500 text-white px-6 py-2.5 rounded-full hover:bg-orange-600 transition-colors">Book Pet Care</a>
+                </nav>
+                <button id="mobile-menu-button" class="md:hidden p-2 text-gray-700" aria-label="Toggle menu">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden py-4 border-t border-gray-200">
+                <nav class="flex flex-col gap-4">
+                    <a href="index.html" class="px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors">Home</a>
+                    <a href="about.html" class="px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors">About Us</a>
+                    <a href="services.html" class="px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors">Services</a>
+                    <a href="contact.html" class="px-4 py-2 rounded-lg bg-orange-50 text-orange-600 font-semibold transition-colors">Contact</a>
+                    <a href="contact.html" class="mx-4 bg-orange-500 text-white px-6 py-2.5 rounded-full hover:bg-orange-600 transition-colors text-center">Book Pet Care</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-br from-orange-50 via-pink-50 to-purple-50 py-16 md:py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Get in Touch</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Have questions about our pet care services? Ready to schedule care for your furry 
+                    family member? We're here to help and would love to hear from you.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Form & Info Section -->
+        <section class="py-16 md:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- Contact Form -->
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">Schedule Pet Care Today</h2>
+                        <p class="text-gray-600 mb-8">
+                            Fill out the form below and we'll get back to you within 24 hours to discuss 
+                            your pet's needs and schedule a free consultation.
+                        </p>
+
+                        <!-- Success Message -->
+                        <div id="success-message" class="hidden bg-green-50 border border-green-200 rounded-2xl p-8 text-center">
+                            <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i data-lucide="check-circle" class="w-8 h-8 text-white"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Thank You!</h3>
+                            <p class="text-gray-700">
+                                We've received your message and will contact you within 24 hours. 
+                                We look forward to caring for your pet!
+                            </p>
+                        </div>
+
+                        <!-- Form Container -->
+                        <div id="contact-form-container">
+                            <form id="contact-form" class="space-y-6">
+                                <!-- Name -->
+                                <div>
+                                    <label for="name" class="block text-sm font-semibold text-gray-900 mb-2">Your Name *</label>
+                                    <input type="text" id="name" name="name" required 
+                                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition"
+                                        placeholder="John Smith">
+                                </div>
+
+                                <!-- Email -->
+                                <div>
+                                    <label for="email" class="block text-sm font-semibold text-gray-900 mb-2">Email Address *</label>
+                                    <input type="email" id="email" name="email" required 
+                                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition"
+                                        placeholder="john.smith@example.com">
+                                </div>
+
+                                <!-- Phone -->
+                                <div>
+                                    <label for="phone" class="block text-sm font-semibold text-gray-900 mb-2">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" required 
+                                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition"
+                                        placeholder="+1 (555) 123-4567">
+                                </div>
+
+                                <!-- Pet Type -->
+                                <div>
+                                    <label for="petType" class="block text-sm font-semibold text-gray-900 mb-2">Pet Type *</label>
+                                    <select id="petType" name="petType" required 
+                                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition bg-white">
+                                        <option value="">Select pet type</option>
+                                        <option value="dog">Dog</option>
+                                        <option value="cat">Cat</option>
+                                        <option value="both">Both Dog & Cat</option>
+                                        <option value="other">Other (please specify in message)</option>
+                                    </select>
+                                </div>
+
+                                <!-- Service -->
+                                <div>
+                                    <label for="service" class="block text-sm font-semibold text-gray-900 mb-2">Service Interested In *</label>
+                                    <select id="service" name="service" required 
+                                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition bg-white">
+                                        <option value="">Select a service</option>
+                                        <option value="pet-sitting">Pet Sitting</option>
+                                        <option value="dog-walking">Dog Walking</option>
+                                        <option value="overnight-care">Overnight Pet Care</option>
+                                        <option value="puppy-kitten-care">Puppy & Kitten Care</option>
+                                        <option value="senior-pet-care">Senior Pet Care</option>
+                                        <option value="medication-support">Pet Feeding & Medication Support</option>
+                                        <option value="not-sure">Not Sure / Multiple Services</option>
+                                    </select>
+                                </div>
+
+                                <!-- Message -->
+                                <div>
+                                    <label for="message" class="block text-sm font-semibold text-gray-900 mb-2">Tell Us About Your Pet & Needs</label>
+                                    <textarea id="message" name="message" rows="5" 
+                                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition resize-none"
+                                        placeholder="Tell us about your pet's personality, any special needs, preferred schedule, or questions you have..."></textarea>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <button type="submit" 
+                                    class="w-full bg-orange-500 text-white px-8 py-4 rounded-full hover:bg-orange-600 transition-colors flex items-center justify-center gap-2 shadow-lg hover:shadow-xl">
+                                    <i data-lucide="send" class="w-5 h-5"></i>
+                                    Send Message
+                                </button>
+
+                                <p class="text-sm text-gray-600 text-center">
+                                    By submitting this form, you agree to our 
+                                    <a href="terms.html" class="text-orange-500 hover:text-orange-600 underline">Terms & Conditions</a>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">Contact Information</h2>
+                        
+                        <div class="space-y-6 mb-8">
+                            <!-- Phone -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="phone" class="w-6 h-6 text-orange-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-900 mb-1">Phone</h3>
+                                    <a href="tel:+16248390037" class="text-gray-600 hover:text-orange-500 transition-colors">+1-624-839-0037</a>
+                                    <p class="text-sm text-gray-500 mt-1">Call or text anytime for immediate assistance</p>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="mail" class="w-6 h-6 text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-900 mb-1">Email</h3>
+                                    <a href="mailto:care@GentlePaws.in" class="text-gray-600 hover:text-orange-500 transition-colors">care@GentlePaws.in</a>
+                                    <p class="text-sm text-gray-500 mt-1">We respond within 24 hours</p>
+                                </div>
+                            </div>
+
+                            <!-- Address -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="map-pin" class="w-6 h-6 text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-900 mb-1">Address</h3>
+                                    <p class="text-gray-600">
+                                        13th Street 47 W 13th St<br>
+                                        New York, NY 10011<br>
+                                        USA
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Service Hours -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="clock" class="w-6 h-6 text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-900 mb-1">Service Hours</h3>
+                                    <div class="text-gray-600 space-y-1">
+                                        <p>Monday - Friday: 7:00 AM - 9:00 PM</p>
+                                        <p>Saturday - Sunday: 8:00 AM - 8:00 PM</p>
+                                        <p class="text-sm text-orange-600 font-semibold mt-2">
+                                            Emergency support available 24/7 for current clients
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Emergency Note -->
+                        <div class="bg-red-50 border border-red-200 rounded-xl p-6 mb-6">
+                            <h3 class="font-bold text-gray-900 mb-2 flex items-center gap-2">
+                                <i data-lucide="phone" class="w-5 h-5 text-red-600"></i>
+                                Pet Emergency?
+                            </h3>
+                            <p class="text-gray-700 text-sm leading-relaxed">
+                                If you're a current client experiencing a pet emergency, please call us 
+                                immediately at <strong>+1-624-839-0037</strong>. If your pet requires urgent 
+                                medical attention, contact your veterinarian or the nearest emergency animal 
+                                hospital first, then notify us.
+                            </p>
+                        </div>
+
+                        <!-- Service Area -->
+                        <div class="bg-gradient-to-br from-orange-50 to-pink-50 rounded-xl p-6">
+                            <h3 class="font-bold text-gray-900 mb-3">Service Area</h3>
+                            <p class="text-gray-700 mb-4">We proudly serve all five boroughs of New York City:</p>
+                            <ul class="grid grid-cols-2 gap-2 text-sm text-gray-700">
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i>
+                                    Manhattan
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i>
+                                    Brooklyn
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i>
+                                    Queens
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i>
+                                    Bronx
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i>
+                                    Staten Island
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-16 md:py-24 bg-gray-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Frequently Asked Questions</h2>
+                
+                <div class="space-y-6">
+                    <div class="bg-white rounded-xl p-6 shadow-sm">
+                        <h3 class="font-bold text-gray-900 mb-3">How do I book pet care services?</h3>
+                        <p class="text-gray-700 leading-relaxed">Simply fill out the contact form above, call us, or send an email. We'll schedule a free consultation to discuss your pet's needs, answer questions, and create a customized care plan. Once you're ready, we'll set up your first visit!</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-sm">
+                        <h3 class="font-bold text-gray-900 mb-3">Do you offer meet-and-greet appointments?</h3>
+                        <p class="text-gray-700 leading-relaxed">Yes! We encourage all new clients to schedule a complimentary meet-and-greet so you can meet the caregiver, ask questions, and ensure your pet feels comfortable. This helps us understand your pet's personality and your home routine.</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-sm">
+                        <h3 class="font-bold text-gray-900 mb-3">What if I need to cancel or reschedule?</h3>
+                        <p class="text-gray-700 leading-relaxed">We understand plans change! We ask for at least 24 hours notice for cancellations or schedule changes. Please see our Terms & Conditions for our full cancellation policy.</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-sm">
+                        <h3 class="font-bold text-gray-900 mb-3">Are your caregivers insured and bonded?</h3>
+                        <p class="text-gray-700 leading-relaxed">Yes, all GentlePaws caregivers are fully bonded and insured for your complete peace of mind. We also carry liability insurance to protect you, your pet, and your home.</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-sm">
+                        <h3 class="font-bold text-gray-900 mb-3">How do I provide access to my home?</h3>
+                        <p class="text-gray-700 leading-relaxed">Most clients provide a spare key, which we store securely with your pet's information. We also work with keyless entry systems, lockboxes, or building doormen — whatever works best for you.</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-sm">
+                        <h3 class="font-bold text-gray-900 mb-3">Will I get updates about my pet?</h3>
+                        <p class="text-gray-700 leading-relaxed">Absolutely! We provide daily photo or video updates via text or email so you always know how your pet is doing. You'll receive updates after each visit or at scheduled times during longer care periods.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 md:py-24 bg-gradient-to-r from-orange-500 to-pink-500">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Experience Peace of Mind?</h2>
+                <p class="text-xl text-orange-50 mb-8">
+                    Join hundreds of happy pet families who trust GentlePaws with their furry loved ones.
+                </p>
+                <a href="tel:+16248390037" 
+                    class="inline-flex items-center justify-center bg-white text-orange-500 px-8 py-4 rounded-full hover:bg-orange-50 transition-colors shadow-lg text-lg font-semibold">
+                    <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
+                    Call Now: +1-624-839-0037
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-orange-400 to-pink-500 rounded-full flex items-center justify-center">
+                            <i data-lucide="heart" class="w-5 h-5 text-white fill-white"></i>
+                        </div>
+                        <span class="text-2xl font-bold text-white">GentlePaws</span>
+                    </div>
+                    <p class="text-sm leading-relaxed">Providing loving, reliable pet care services for families across New York. Your pet's happiness and safety are our top priorities.</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-orange-400 transition-colors text-sm">Home</a></li>
+                        <li><a href="about.html" class="hover:text-orange-400 transition-colors text-sm">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-orange-400 transition-colors text-sm">Services</a></li>
+                        <li><a href="contact.html" class="hover:text-orange-400 transition-colors text-sm">Contact</a></li>
+                        <li><a href="terms.html" class="hover:text-orange-400 transition-colors text-sm">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Our Services</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>Pet Sitting</li>
+                        <li>Dog Walking</li>
+                        <li>Overnight Care</li>
+                        <li>Puppy & Kitten Care</li>
+                        <li>Senior Pet Care</li>
+                        <li>Medication Support</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Get in Touch</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="phone" class="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5"></i>
+                            <a href="tel:+16248390037" class="hover:text-orange-400 transition-colors text-sm">+1-624-839-0037</a>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="mail" class="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5"></i>
+                            <a href="mailto:care@GentlePaws.in" class="hover:text-orange-400 transition-colors text-sm">care@GentlePaws.in</a>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5"></i>
+                            <span class="text-sm">13th Street 47 W 13th St,<br>New York, NY 10011, USA</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-sm">
+                <p>&copy; <span id="current-year"></span> GentlePaws. All rights reserved. | <a href="terms.html" class="hover:text-orange-400 transition-colors">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scroll-to-top" class="hidden fixed bottom-8 right-8 bg-orange-500 text-white p-3 rounded-full shadow-lg hover:bg-orange-600 transition-all z-50">
+        <i data-lucide="arrow-up" class="w-6 h-6"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

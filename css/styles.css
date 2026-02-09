@@ -1,0 +1,81 @@
+/* Custom Styles for GentlePaws */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom fill for icons */
+.fill-white {
+    fill: white;
+}
+
+.fill-orange-500 {
+    fill: #f97316;
+}
+
+/* Backdrop blur fallback */
+.backdrop-blur-sm {
+    backdrop-filter: blur(4px);
+}
+
+/* Hide scrollbar for cleaner look */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f97316;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ea580c;
+}
+
+/* Smooth transitions */
+* {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+/* Focus styles for accessibility */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #f97316;
+    outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+    header,
+    footer,
+    #scroll-to-top,
+    #mobile-menu-button {
+        display: none;
+    }
+}
+
+/* Animation for scroll to top button */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.3s ease-out;
+}

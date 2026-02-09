@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Care Services - GentlePaws</title>
+    <meta name="description" content="Professional pet care services for dogs and cats in New York. Pet sitting, dog walking, overnight care, and more.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 bg-gradient-to-br from-orange-400 to-pink-500 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <i data-lucide="heart" class="w-5 h-5 text-white fill-white"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-gray-900">GentlePaws</span>
+                </a>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="text-gray-700 hover:text-orange-500 transition-colors">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-orange-500 transition-colors">About Us</a>
+                    <a href="services.html" class="text-orange-500 font-semibold transition-colors">Services</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-orange-500 transition-colors">Contact</a>
+                    <a href="contact.html" class="bg-orange-500 text-white px-6 py-2.5 rounded-full hover:bg-orange-600 transition-colors">Book Pet Care</a>
+                </nav>
+                <button id="mobile-menu-button" class="md:hidden p-2 text-gray-700" aria-label="Toggle menu">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden py-4 border-t border-gray-200">
+                <nav class="flex flex-col gap-4">
+                    <a href="index.html" class="px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors">Home</a>
+                    <a href="about.html" class="px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors">About Us</a>
+                    <a href="services.html" class="px-4 py-2 rounded-lg bg-orange-50 text-orange-600 font-semibold transition-colors">Services</a>
+                    <a href="contact.html" class="px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors">Contact</a>
+                    <a href="contact.html" class="mx-4 bg-orange-500 text-white px-6 py-2.5 rounded-full hover:bg-orange-600 transition-colors text-center">Book Pet Care</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-br from-orange-50 via-pink-50 to-purple-50 py-16 md:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Professional Pet Care Services</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Comprehensive, personalized care for dogs and cats of all ages, breeds, and 
+                    personalities. Every service is customized to your pet's unique needs and your schedule.
+                </p>
+            </div>
+        </section>
+
+        <!-- Service 1: Pet Sitting -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-start">
+                    <div>
+                        <div class="sticky top-24">
+                            <div class="rounded-3xl overflow-hidden shadow-xl">
+                                <img src="https://images.unsplash.com/photo-1770131045263-ecadcdc47893?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdXRlJTIwcGV0JTIwc2l0dGluZyUyMGNhdHxlbnwxfHx8fDE3NzAyNDU4OTR8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Pet Sitting" class="w-full h-[400px] object-cover">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center">
+                                <i data-lucide="home" class="w-8 h-8 text-white"></i>
+                            </div>
+                            <div>
+                                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Pet Sitting</h2>
+                                <p class="text-orange-600 font-semibold">Comfort and care in the safety of their own home</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-8">Our professional pet sitting services provide your furry family members with personalized attention, feeding, playtime, and companionship while you're away. We maintain your pet's regular routine in the comfort and security of their own environment, reducing stress and ensuring they feel loved and safe.</p>
+                        
+                        <div class="mb-8">
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">What's Included</h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Scheduled daily visits (1, 2, or 3 times per day)</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Feeding and fresh water according to your schedule</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Playtime, cuddles, and companionship</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Litter box cleaning or outdoor bathroom breaks</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Medication administration if needed</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Mail and package collection</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Plant watering and basic home security checks</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Daily photo and text updates</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-blue-50 rounded-xl p-6 mb-6">
+                            <h3 class="font-bold text-gray-900 mb-2 flex items-center gap-2">
+                                <i data-lucide="users" class="w-5 h-5 text-blue-600"></i>
+                                Who It's For
+                            </h3>
+                            <p class="text-gray-700">Perfect for cats, small dogs, senior pets, or any animal who feels most comfortable at home. Ideal for working professionals, weekend getaways, or extended travel.</p>
+                        </div>
+
+                        <div class="bg-orange-50 rounded-xl p-6">
+                            <h3 class="font-bold text-gray-900 mb-2">Customization Options</h3>
+                            <p class="text-gray-700">Every pet sitting plan is customized to your pet's unique needs, personality, and routine. We'll discuss feeding schedules, favorite toys, behavioral quirks, and any special requirements during your initial consultation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service 2: Dog Walking -->
+        <section class="py-16 md:py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-start">
+                    <div class="md:order-2">
+                        <div class="sticky top-24">
+                            <div class="rounded-3xl overflow-hidden shadow-xl">
+                                <img src="https://images.unsplash.com/photo-1761216719699-09388eeb56b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkb2clMjB3YWxrZXIlMjBwYXJrfGVufDF8fHx8MTc3MDI0NTg5M3ww&ixlib=rb-4.1.0&q=80&w=1080" alt="Dog Walking" class="w-full h-[400px] object-cover">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:order-1">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center">
+                                <i data-lucide="footprints" class="w-8 h-8 text-white"></i>
+                            </div>
+                            <div>
+                                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Dog Walking</h2>
+                                <p class="text-orange-600 font-semibold">Exercise, exploration, and happy tails</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-8">Regular exercise is essential for your dog's physical health and mental wellbeing. Our experienced dog walkers provide safe, energizing walks tailored to your dog's age, breed, and energy level. Whether your pup needs a quick potty break or an hour-long adventure, we ensure they get the outdoor time they need to stay healthy, happy, and well-behaved.</p>
+                        
+                        <div class="mb-8">
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">What's Included</h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Individual or small group walks (your choice)</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">15, 30, or 60-minute walk durations</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Flexible daily, weekly, or on-demand scheduling</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Poop bags and cleanup included</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Fresh water provided during longer walks</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">GPS tracking available for peace of mind</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Post-walk report with photos</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Paw wiping and towel-off in bad weather</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-blue-50 rounded-xl p-6 mb-6">
+                            <h3 class="font-bold text-gray-900 mb-2 flex items-center gap-2">
+                                <i data-lucide="users" class="w-5 h-5 text-blue-600"></i>
+                                Who It's For
+                            </h3>
+                            <p class="text-gray-700">Ideal for busy professionals, high-energy breeds, puppies learning leash skills, or any dog who needs regular exercise and stimulation. Great for dogs of all ages and abilities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service 3: Overnight Pet Care -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-start">
+                    <div>
+                        <div class="sticky top-24">
+                            <div class="rounded-3xl overflow-hidden shadow-xl">
+                                <img src="https://images.unsplash.com/photo-1576149324567-4fd5627ee73d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkb2dzJTIwY2F0cyUyMHRvZ2V0aGVyJTIwZnJpZW5kc3xlbnwxfHx8fDE3NzAyNDU4OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Overnight Pet Care" class="w-full h-[400px] object-cover">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center">
+                                <i data-lucide="moon" class="w-8 h-8 text-white"></i>
+                            </div>
+                            <div>
+                                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Overnight Pet Care</h2>
+                                <p class="text-orange-600 font-semibold">24/7 supervision and complete peace of mind</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-8">When you need to be away overnight, our caregivers stay in your home to provide round-the-clock attention and security for your pets. We maintain their normal routines, offer companionship throughout the evening, and ensure someone is always there in case of emergency. Sleep soundly knowing your pets are safe, comfortable, and never alone.</p>
+                        
+                        <div class="mb-8">
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">What's Included</h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Full overnight stay (typically 8pm-8am or customized)</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Evening and morning feeding, walks, and care</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Bedtime routines and companionship</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Overnight supervision and security</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Multiple bathroom breaks for dogs</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Medication administration as needed</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Home security presence</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Morning and evening photo updates</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-blue-50 rounded-xl p-6 mb-6">
+                            <h3 class="font-bold text-gray-900 mb-2 flex items-center gap-2">
+                                <i data-lucide="users" class="w-5 h-5 text-blue-600"></i>
+                                Who It's For
+                            </h3>
+                            <p class="text-gray-700">Perfect for anxious pets who don't do well alone, senior animals needing overnight monitoring, or pet parents who travel frequently and want comprehensive care and home security.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service 4: Puppy & Kitten Care -->
+        <section class="py-16 md:py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-start">
+                    <div class="md:order-2">
+                        <div class="sticky top-24">
+                            <div class="rounded-3xl overflow-hidden shadow-xl">
+                                <img src="https://images.unsplash.com/photo-1769117320704-b4d7d21ada85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwdXBweSUyMGtpdHRlbiUyMHlvdW5nJTIwcGV0c3xlbnwxfHx8fDE3NzAyNDU4OTV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Puppy & Kitten Care" class="w-full h-[400px] object-cover">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:order-1">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center">
+                                <i data-lucide="sparkles" class="w-8 h-8 text-white"></i>
+                            </div>
+                            <div>
+                                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Puppy & Kitten Care</h2>
+                                <p class="text-orange-600 font-semibold">Patient, nurturing attention for your youngest pets</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-8">Young pets need extra patience, supervision, and care during their crucial early months. Our puppy and kitten care services provide gentle handling, socialization support, consistent routines, and the attentive monitoring young animals require as they grow and learn. We help set them up for success with positive experiences and loving attention.</p>
+                        
+                        <div class="mb-8">
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">What's Included</h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Frequent potty break visits for puppies</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Consistent feeding schedules</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Gentle play and early socialization</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Basic training reinforcement</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Accident cleanup and patience</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Age-appropriate exercise</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Close monitoring for health and behavior</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Detailed progress reports</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-blue-50 rounded-xl p-6 mb-6">
+                            <h3 class="font-bold text-gray-900 mb-2 flex items-center gap-2">
+                                <i data-lucide="users" class="w-5 h-5 text-blue-600"></i>
+                                Who It's For
+                            </h3>
+                            <p class="text-gray-700">Essential for new puppy or kitten parents who work during the day, need help with house training, or want professional support during the demanding early months of pet parenthood.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service 5: Senior Pet Care -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-start">
+                    <div>
+                        <div class="sticky top-24">
+                            <div class="rounded-3xl overflow-hidden shadow-xl">
+                                <img src="https://images.unsplash.com/photo-1765896387493-b473e1c0fb78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZW5pb3IlMjBkb2clMjBjYXJlJTIwY29tZm9ydHxlbnwxfHx8fDE3NzAyNDU4OTR8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Senior Pet Care" class="w-full h-[400px] object-cover">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center">
+                                <i data-lucide="heart" class="w-8 h-8 text-white"></i>
+                            </div>
+                            <div>
+                                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Senior Pet Care</h2>
+                                <p class="text-orange-600 font-semibold">Gentle, compassionate attention for aging companions</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-8">Senior pets deserve extra comfort, patience, and specialized care as they age. Our senior pet care services are designed specifically for older animals who may have mobility challenges, medical needs, or simply need a gentler pace. We provide the tender, understanding attention that helps your aging pet maintain quality of life and dignity.</p>
+                        
+                        <div class="mb-8">
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">What's Included</h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Gentle assistance with mobility and stairs</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Frequent bathroom breaks and patience</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Medication administration and health monitoring</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Comfortable, low-stress interactions</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Arthritis-friendly exercise and movement</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Special diet feeding and hydration support</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Extra time for slower-paced activities</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Detailed health observations and updates</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-blue-50 rounded-xl p-6 mb-6">
+                            <h3 class="font-bold text-gray-900 mb-2 flex items-center gap-2">
+                                <i data-lucide="users" class="w-5 h-5 text-blue-600"></i>
+                                Who It's For
+                            </h3>
+                            <p class="text-gray-700">Perfect for pet parents with aging dogs or cats who need extra support, have medical conditions, or require careful monitoring and gentle handling throughout the day.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service 6: Pet Feeding & Medication Support -->
+        <section class="py-16 md:py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-start">
+                    <div class="md:order-2">
+                        <div class="sticky top-24">
+                            <div class="rounded-3xl overflow-hidden shadow-xl">
+                                <img src="https://images.unsplash.com/photo-1625321171045-1fea4ac688e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZXQlMjBjYXJlZ2l2ZXIlMjB2ZXRlcmluYXJ5JTIwcHJvZmVzc2lvbmFsfGVufDF8fHx8MTc3MDI0NTg5Nnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Pet Feeding & Medication" class="w-full h-[400px] object-cover">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:order-1">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center">
+                                <i data-lucide="stethoscope" class="w-8 h-8 text-white"></i>
+                            </div>
+                            <div>
+                                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Pet Feeding & Medication Support</h2>
+                                <p class="text-orange-600 font-semibold">Reliable care for pets with dietary and medical needs</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-8">Pets with special diets, medication schedules, or health conditions need consistent, reliable care. Our feeding and medication support services ensure your pet receives the right food, supplements, and medicines at precisely the right times. We follow your veterinarian's instructions exactly and keep detailed records for your peace of mind.</p>
+                        
+                        <div class="mb-8">
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">What's Included</h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Scheduled feeding according to your vet's plan</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Oral medication administration</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Insulin injections and glucose monitoring (if trained)</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Special diet preparation and portion control</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Supplement administration</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Detailed care logs and medication tracking</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Health observations and behavior monitoring</span></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"></i><span class="text-gray-700">Communication with your veterinarian if needed</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-blue-50 rounded-xl p-6 mb-6">
+                            <h3 class="font-bold text-gray-900 mb-2 flex items-center gap-2">
+                                <i data-lucide="users" class="w-5 h-5 text-blue-600"></i>
+                                Who It's For
+                            </h3>
+                            <p class="text-gray-700">Essential for pets with diabetes, chronic conditions, post-surgery recovery, or any animal requiring regular medication or specialized feeding schedules.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Features -->
+        <section class="py-16 md:py-24 bg-gradient-to-br from-blue-50 to-purple-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Every Service Includes</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                        No matter which service you choose, you'll always receive our commitment to 
+                        excellence, communication, and your pet's happiness.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-2xl p-6 shadow-lg text-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-orange-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="camera" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-900 mb-2">Photo & Video Updates</h3>
+                        <p class="text-sm text-gray-600">Stay connected with daily visual updates</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 shadow-lg text-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-orange-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="shield" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-900 mb-2">Bonded & Insured</h3>
+                        <p class="text-sm text-gray-600">Complete protection and peace of mind</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 shadow-lg text-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-orange-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="clock" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-900 mb-2">Flexible Scheduling</h3>
+                        <p class="text-sm text-gray-600">Book around your lifestyle and needs</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 shadow-lg text-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-orange-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="heart" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-900 mb-2">Love & Attention</h3>
+                        <p class="text-sm text-gray-600">Genuine care from true pet lovers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 md:py-24 bg-gradient-to-r from-orange-500 to-pink-500">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Book Pet Care?</h2>
+                <p class="text-xl text-orange-50 mb-8">
+                    Get started with a free consultation to discuss your pet's needs and create 
+                    a customized care plan.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="inline-flex items-center justify-center bg-white text-orange-500 px-8 py-4 rounded-full hover:bg-orange-50 transition-colors shadow-lg">
+                        Schedule a Consultation
+                    </a>
+                    <a href="tel:+16248390037" class="inline-flex items-center justify-center bg-transparent text-white px-8 py-4 rounded-full hover:bg-white/10 transition-colors border-2 border-white">
+                        Call +1-624-839-0037
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-orange-400 to-pink-500 rounded-full flex items-center justify-center">
+                            <i data-lucide="heart" class="w-5 h-5 text-white fill-white"></i>
+                        </div>
+                        <span class="text-2xl font-bold text-white">GentlePaws</span>
+                    </div>
+                    <p class="text-sm leading-relaxed">Providing loving, reliable pet care services for families across New York. Your pet's happiness and safety are our top priorities.</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-orange-400 transition-colors text-sm">Home</a></li>
+                        <li><a href="about.html" class="hover:text-orange-400 transition-colors text-sm">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-orange-400 transition-colors text-sm">Services</a></li>
+                        <li><a href="contact.html" class="hover:text-orange-400 transition-colors text-sm">Contact</a></li>
+                        <li><a href="terms.html" class="hover:text-orange-400 transition-colors text-sm">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Our Services</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>Pet Sitting</li>
+                        <li>Dog Walking</li>
+                        <li>Overnight Care</li>
+                        <li>Puppy & Kitten Care</li>
+                        <li>Senior Pet Care</li>
+                        <li>Medication Support</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Get in Touch</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="phone" class="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5"></i>
+                            <a href="tel:+16248390037" class="hover:text-orange-400 transition-colors text-sm">+1-624-839-0037</a>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="mail" class="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5"></i>
+                            <a href="mailto:care@GentlePaws.in" class="hover:text-orange-400 transition-colors text-sm">care@GentlePaws.in</a>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5"></i>
+                            <span class="text-sm">13th Street 47 W 13th St,<br>New York, NY 10011, USA</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-sm">
+                <p>&copy; <span id="current-year"></span> GentlePaws. All rights reserved. | <a href="terms.html" class="hover:text-orange-400 transition-colors">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scroll-to-top" class="hidden fixed bottom-8 right-8 bg-orange-500 text-white p-3 rounded-full shadow-lg hover:bg-orange-600 transition-all z-50">
+        <i data-lucide="arrow-up" class="w-6 h-6"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
